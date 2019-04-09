@@ -463,6 +463,10 @@ function terminal(signal, opts) {
           console.log('There may be some servers remained:', msg.serverIds);
         }
       }
+      else if(signal === 'stop') 
+      {
+        console.log('All the servers have been STOP!');  
+      }
       process.exit(0);
     });
   });
